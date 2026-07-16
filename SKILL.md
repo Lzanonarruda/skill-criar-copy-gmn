@@ -21,7 +21,7 @@ Antes de executar, ler `{cliente}/brand-profile.md` (schema completo em `_sistem
 - **Humanização:** tabela de padrões AI → substitutos humanos
 - **SEO Local — GMN:** lista completa de keywords por intenção e regras de match
 - **CTA padrão** e restrições de copy
-- **Dados da empresa:** endereço, telefone, WhatsApp, horário, serviços e diferenciais — sempre que a copy citar um desses dados (comum no CTA "com serviços" e na referência explícita à localização), usar exatamente o que está nessa seção. Nunca inventar, aproximar ou supor serviço, estrutura ou informação que não conste lá; se faltar o dado, perguntar ao usuário
+- **Dados da empresa:** endereço, telefone, WhatsApp, horário, serviços e diferenciais — sempre que a copy citar um desses dados (comum no CTA "com serviços" e na referência explícita à localização), usar exatamente o que está nessa seção. Nunca inventar, aproximar ou supor serviço, estrutura ou informação que não conste lá; se faltar o dado, perguntar ao usuário. **Horário em especial:** nunca assumir campo único de "horário" — se o negócio tiver mais de um horário registrado (atendimento vs serviço-fim, ver nota em `brand-profile-conteudo-visual.md` → "Dados da empresa"), usar o que corresponde ao assunto da copy
 
 ---
 
@@ -160,6 +160,19 @@ Acionado quando o usuário pede copy para um post específico ou passa um tema d
 - Se o usuário apontou um post do calendário (ex: "Post 2 da semana 06–12 Jul"): ler o arquivo de calendário correspondente e localizar o bloco do post (tema, data, tipo)
 - Se o usuário passou um tema livre (ex: "dúvida frequente sobre X"): usar o tema como base sem ler o calendário
 
+**Passo 1.5 — Verificar repetição de argumento (anti-repetição, janela de 15 dias):**
+
+Antes de escrever o rascunho, ler a seção `## Google Meu Negócio` do arquivo de calendário do mês corrente (e do mês anterior, se a janela de 15 dias anteriores à data do post cruzar a virada do mês) e listar as copies publicadas nesse intervalo.
+
+Isso é diferente da checagem de tema que `/calendário-conteudo` já faz no planejamento (Passo 2.0 dessa skill): aqui o que importa é o **argumento** de cada copy — a linha de raciocínio "por que isso acontece" e "o que o negócio faz de diferente" — não só o assunto de superfície. Duas copies podem ter temas diferentes na aparência (ex: "primeira aula" vs "ritmo de aprendizado") e ainda assim reciclarem o mesmo argumento de fundo com palavras trocadas.
+
+Para cada copy anterior na janela, comparar o argumento com o rascunho pretendido usando a pergunta-guia: **"alguém que leu as duas copies sentiria que é o mesmo argumento reciclado com palavras diferentes?"**
+
+- Se sim → mudar o ângulo argumentativo antes de escrever (outro "por quê", outro diferencial, outro recorte do tema), não só trocar o vocabulário
+- Se não → seguir normalmente para o Passo 2
+
+Erro real evitado por esta etapa: uma copy sobre "CNH depois dos 30" reaproveitou quase o mesmo argumento de ritmo/comparação de aprendizado de uma copy do dia anterior sobre "medo de dirigir" — seria pego só nesta checagem, não pela comparação de tema feita no calendário.
+
 **Passo 2 — Gerar a copy:**
 Produzir o rascunho seguindo integralmente o **Padrão de copy GMN** definido acima.
 
@@ -226,7 +239,7 @@ Acionado quando o usuário quer gerar copy GMN para todos os posts de uma semana
 Ler o arquivo de calendário do período solicitado e listar todos os posts com tema, data e tipo.
 
 **Passo 2 — Gerar todas as copies:**
-Para cada post da lista, gerar a copy seguindo o **Padrão de copy GMN**. Adaptar tom e foco ao tipo de cada post — não usar o mesmo molde para posts educativos, comemorativos e de oferta.
+Para cada post da lista, aplicar primeiro o **Passo 1.5 — Verificar repetição de argumento** do Fluxo 1 — na geração em lote, a comparação inclui tanto as copies já publicadas na janela de 15 dias quanto as copies dos outros posts do próprio lote gerados até aquele ponto (o lote inteiro conta como parte da janela de repetição, não só o histórico já salvo no calendário). Depois, gerar a copy seguindo o **Padrão de copy GMN**. Adaptar tom e foco ao tipo de cada post — não usar o mesmo molde para posts educativos, comemorativos e de oferta.
 
 **Passo 2b — Validar cada copy:**
 Para cada copy gerada, executar a mesma sequência de validação do Fluxo 1:
