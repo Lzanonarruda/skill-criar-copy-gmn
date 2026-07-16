@@ -173,6 +173,10 @@ Para cada copy anterior na janela, comparar o argumento com o rascunho pretendid
 
 Erro real evitado por esta etapa: uma copy sobre "CNH depois dos 30" reaproveitou quase o mesmo argumento de ritmo/comparação de aprendizado de uma copy do dia anterior sobre "medo de dirigir" — seria pego só nesta checagem, não pela comparação de tema feita no calendário.
 
+**Passo 1.6 — Criar checklist de execução (obrigatório):**
+
+Criar uma lista TodoWrite com os gates obrigatórios: Passo 2b (Validar com /copywriting), Passo 2c (Validar com /humanizer), Passo 3b (Salvar copy.md). Ver [[auditoria-execucao-skills]].
+
 **Passo 2 — Gerar a copy:**
 Produzir o rascunho seguindo integralmente o **Padrão de copy GMN** definido acima.
 
@@ -226,6 +230,8 @@ status: pronto
 [texto da copy, com os negritos SEO]
 ```
 
+**Auditoria antes de apresentar (obrigatório):** reconferir a lista TodoWrite do Passo 1.6 — todos os itens `completed` antes de confirmar ao usuário (ver [[auditoria-execucao-skills]]).
+
 **Passo 4 — Confirmar ao usuário:**
 Informar o path do arquivo do calendário atualizado, o path do `copy.md` salvo, e apresentar a copy gerada.
 
@@ -237,6 +243,9 @@ Acionado quando o usuário quer gerar copy GMN para todos os posts de uma semana
 
 **Passo 1 — Ler o calendário:**
 Ler o arquivo de calendário do período solicitado e listar todos os posts com tema, data e tipo.
+
+**Passo 1.1 — Criar checklist de execução (obrigatório):**
+Criar uma lista TodoWrite com 1 item por post do lote, cobrindo copywriting + humanizer + copy.md salvo daquele post. Ver [[auditoria-execucao-skills]].
 
 **Passo 2 — Gerar todas as copies:**
 Para cada post da lista, aplicar primeiro o **Passo 1.5 — Verificar repetição de argumento** do Fluxo 1 — na geração em lote, a comparação inclui tanto as copies já publicadas na janela de 15 dias quanto as copies dos outros posts do próprio lote gerados até aquele ponto (o lote inteiro conta como parte da janela de repetição, não só o histórico já salvo no calendário). Depois, gerar a copy seguindo o **Padrão de copy GMN**. Adaptar tom e foco ao tipo de cada post — não usar o mesmo molde para posts educativos, comemorativos e de oferta.
@@ -262,6 +271,8 @@ Criar a seção `## Google Meu Negócio` após `## Legendas` com todos os blocos
 
 **Passo 3b — Salvar `copy.md` na pasta da thumbnail de cada post:**
 Para cada copy do lote, salvar também como arquivo próprio em `{cliente}/GMN/Thumbnails/<AAAA-MM-DD>-<tema>/copy.md` (ver formato e regra de pasta no Passo 3b do Fluxo 1). Repetir para todos os posts do lote, não só o primeiro.
+
+**Auditoria antes de apresentar (obrigatório):** reconferir a lista TodoWrite do Passo 1.1 — 1 item por post, todos `completed`, antes de confirmar ao usuário. Se algum post do lote ficou sem copy validada, gerar antes de prosseguir (ver [[auditoria-execucao-skills]]).
 
 **Passo 4 — Confirmar ao usuário:**
 Informar o path do arquivo do calendário atualizado, os paths de todos os `copy.md` salvos, e apresentar todas as copies geradas.
